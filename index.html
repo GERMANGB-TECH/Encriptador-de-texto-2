@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="Logo.png" alt="Logo" class="logo">
+    </header>
+    <main>
+        <section class="input-section">
+           
+            <textarea id="input-text" placeholder="Introduce el texto aquí..."></textarea>
+            <p class="warning"> ⚠ Solo letras minúsculas y sin acentos</p>
+            <div class="button-group">
+                <button id="encrypt-btn" disabled>Encriptar</button>
+                <button id="decrypt-btn" disabled>Desencriptar</button>
+            </div>
+        </section>
+        <section class="output-section">
+            <div id="placeholder-container">
+                <img src="imagen.png" alt="Imagen de inicio" id="placeholder-image">
+                <p id="no-text-found"><strong>Ningún texto fue encontrado</strong></p>
+                <p id="instruction">Ingresa el texto que desees encriptar o desencriptar</p>
+            <div id="output-container" style="display: none;">
+                <textarea id="output-text" readonly></textarea>
+                <button id="copy-btn">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Creado por Germán González en Alura Latam, Agosto de 2024</p>
+    </footer>
+    <script src="Encriptador.js"></script>
+</body>
+</html>
